@@ -5,7 +5,7 @@ Parameters:
   FrontendOrigin:
     Type: String
     Description: Exact HTTPS frontend origin, without a trailing slash or path
-    AllowedPattern: 'https://[a-zA-Z0-9.-]+'
+    AllowedPattern: 'https?://[a-zA-Z0-9.-]+(:[0-9]+)?'
   TokenSecret:
     Type: String
     NoEcho: true
@@ -65,7 +65,6 @@ Resources:
       CodeUri: .
       MemorySize: 128
       Timeout: 15
-      ReservedConcurrentExecutions: 2
       FunctionUrlConfig:
         AuthType: NONE
         Cors:

@@ -1,1 +1,15 @@
-{"name":"@cloudmeet/backend","private":true,"type":"module","scripts":{"start":"node --env-file-if-exists=.env src/server.mjs","test":"node --test"},"dependencies":{"@aws-sdk/client-dynamodb":"^3.900.0","@aws-sdk/lib-dynamodb":"^3.900.0","aws-jwt-verify":"^5.1.0"}}
+{"name":"@cloudmeet/backend",
+"version":"1.0.0",
+"type":"module",
+"private":true,
+"type":"module",
+"scripts":{
+"start":"node --env-file-if-exists=.env src/server.mjs",
+"test":"node --test"
+},
+"dependencies":{
+"@aws-sdk/client-dynamodb":"^3.900.0",
+"@aws-sdk/lib-dynamodb":"^3.900.0",
+"aws-jwt-verify":"^5.1.0"
+}
+}
